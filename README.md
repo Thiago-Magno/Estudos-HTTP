@@ -7,7 +7,8 @@ O que acontece é uma troca de mensagens entre o browser e o servidor, o browser
 ![Exemplo1](./Imagens aulas/caminho1.png)
 
 ### Pedido :incoming_envelope:
-    No pedido é preciso definir o tipo de pedido, alem falar qual a ação que queremos fazer no servidor. Todo pedido tem um cabeçalho e um corpo(mas são opcionais).
+    No pedido é preciso definir o tipo de pedido, alem falar qual a ação que queremos fazer no servidor.
+    Todo pedido tem um cabeçalho e um corpo(mas são opcionais).
 
 #### GET
     Pegar algum recuros de dentro do servidor
@@ -20,7 +21,9 @@ O que acontece é uma troca de mensagens entre o browser e o servidor, o browser
 ![Exemplo2](./Imagens%20aulas/caminho2.png) 
 
 #### Status code
-    É forma em qua se encontra o pedido, o estado em qual ele esta, ele foi concluido? esta em processo? ou ocorreu algum erro?
+    É forma em qua se encontra o pedido, o estado em qual ele esta, ele foi concluido?
+    esta em processo?
+    ou ocorreu algum erro?
       
     * 200: concluido
     * 301: redireciodo, como por exemplo foi redireciona a um novo URL
@@ -73,7 +76,8 @@ Abre com F12, na aba Network podemos observar as atividade que ocorrem em uma pa
     Permite fazer um controle de site, entre outras coisa
 
 #### Load balancing(Distribuição de carga)
-    Por exemplo no caso de estarmos fazendo um upload de um arquivo muito grande, o proxy balanceia isso dividindo em varios outros proxies para dividir o "peso"
+    Por exemplo no caso de estarmos fazendo um upload de um arquivo muito grande,
+    o proxy balanceia isso dividindo em varios outros proxies para dividir o "peso"
 
 #### Autenticação
     Autenticação para se comunicar com a internet
@@ -94,7 +98,9 @@ Abre com F12, na aba Network podemos observar as atividade que ocorrem em uma pa
 ### Locator
 
 #### URL
-    URL(Uniform Resource Locator), o URL é composto por componentes opcionais que são componentes que afetam a area do local(site) o que é e onde é encontrado(ex: seção contato de um site/um video no yt.)  e obrigatório que é o local em si(site).
+    URL(Uniform Resource Locator), o URL é composto por componentes opcionais que são
+    componentes que afetam a area do local(site) o que é e onde é encontrado(ex: seção contato de um site/um video no yt.)
+    e obrigatório que é o local em si(site).
     Toda URL é uma URI mas nem toda URI é uma URL.
 
 ##### Obrigatórios:
@@ -103,7 +109,9 @@ Abre com F12, na aba Network podemos observar as atividade que ocorrem em uma pa
 
 ##### Opcionais: (opcianal não quer dizer que é necessario ou não ser colocado)
     * Subdominio: é oq vem antes do dominio as vezes necessario para encontra a pagina web;
-    * Path: É o caminho para encontra um recurso especifico do dominio (ex: https://app.rocketseat.com.br/node/guia-estelar-de-http, me leva ao guia estelar de http da rocketseat), se não houver um caminho normalmente o usuario é encaminhado para o dominio;
+    * Path: É o caminho para encontra um recurso especifico do dominio (ex: https://app.rocketseat.com.br/node/guia-estelar-de-http,
+    me leva ao guia estelar de http da rocketseat), se não houver um caminho normalmente o usuario é encaminhado para o dominio;
+    
     * Parametro: É usado para encontra um recurso no BD, por exemplo um video no yt precisa de um parametro para ser encontrado;
     * Porta: Algum local dentro do servidor que esta disponivel para chegar lá, as vezes essa porta pode estar fechada impossibilitando a chegada;
     * Âncora: Algum lugar dentro do documento, es procurando algo dentro do documento.
@@ -126,7 +134,8 @@ Abre com F12, na aba Network podemos observar as atividade que ocorrem em uma pa
         -v https//:google.com.br 
     
     * ">" é onde indica a saida dos dados de uma mensagem;   
-    * O tipo de mensagem tem como padrão o tipo Request, caso não tenha sido especificado na mensagem o tipo da mesagem vai acabar sengo request;  
+    * O tipo de mensagem tem como padrão o tipo Request, caso não tenha sido
+    especificado na mensagem o tipo da mesagem vai acabar sengo request;  
 
 #### Response
     * Exibe a resposta do server:
@@ -142,7 +151,8 @@ Abre com F12, na aba Network podemos observar as atividade que ocorrem em uma pa
     Isso assumindo que o arquivo json já foi criado e salvo previamente. Caso n tenha sido criado utilizar o comando:
     vim db.json
     
-    Esse comando vai permitir tanto que seja criado o arquivo db.json quanto edita-lo diretamente do terminal colocando as configurações iniciais do json.
+    Esse comando vai permitir tanto que seja criado o arquivo db.json quanto edita-lo
+    diretamente do terminal colocando as configurações iniciais do json.
 
 
 ## Métodos HTTP
@@ -152,12 +162,15 @@ Abre com F12, na aba Network podemos observar as atividade que ocorrem em uma pa
     Adendo:
     - Cada metodo possui sua propria semantica;
       
-    A imagem abaixo mostra quais são os metodo e se são seguro(se mudam algo no servidor) e idempotentes(quando o metodo é executado a resposta é sempre a mesma)
+    A imagem abaixo mostra quais são os metodo e se são seguro(se mudam algo no servidor) e
+    idempotentes(quando o metodo é executado a resposta é sempre a mesma)
 ![Exemplo idempotencia](Imagens%20aulas/Idempotence.png)
 
 #### OPTIONS
     Caracteristicas:
-    É usado para verificar a disponibilidade dos metodos da requisição, é seguro já que não faz mudanças no servidor, não tem cache porque pode haver mudanças nos estados dos metodos, não tem body. 
+    É usado para verificar a disponibilidade dos metodos da requisição,
+    é seguro já que não faz mudanças no servidor, não tem cache porque pode
+    haver mudanças nos estados dos metodos, não tem body. 
     
     Comando no teminal: curl -X http://localhost:3000/posts -i
 
@@ -169,7 +182,8 @@ Abre com F12, na aba Network podemos observar as atividade que ocorrem em uma pa
     - Request: não;
     - Response: sim;
     * Cache: sim;
-    * Uso em forms HTML: sim. Dependendo do pedido é melhor não usar, mas se for o caso de uma simple pesquisa na maior parte dos caso o uso de form html é o ideal.
+    * Uso em forms HTML: sim. Dependendo do pedido é melhor não usar,
+    mas se for o caso de uma simple pesquisa na maior parte dos caso o uso de form html é o ideal.
     
     Comando no teminal: curl -v http://localhost:3000/posts
 
@@ -241,6 +255,8 @@ Comando utilizado
     A maioria dos clients já possuem headers já pre-definidos.
 
 ### General
-    Serve tanto para o response tanto para o request, sendo um header geral, onde mostra o metodo, status code, remote address serve como um endereço do servidor, referrer policy.
+    Serve tanto para o response tanto para o request, sendo um header geral,
+    onde mostra o metodo, status code, remote address serve como um endereço do servidor,
+    referrer policy.
 
 ### Request

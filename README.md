@@ -4,7 +4,7 @@ O que acontece é uma troca de mensagens entre o browser e o servidor, o browser
 
 ## Mensagem :speech_balloon: 
 
-![Exemplo1](./Imagens aulas/caminho1.png)
+![Exemplo1](./Imagens%20aulas/caminho1.png)
 
 ### Pedido :incoming_envelope:
     No pedido é preciso definir o tipo de pedido, alem falar qual a ação que queremos fazer no servidor.

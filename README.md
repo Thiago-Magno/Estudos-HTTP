@@ -88,7 +88,7 @@ Abre com F12, na aba Network podemos observar as atividade que ocorrem em uma pa
 ## URI
     Sigla para: Uniform Resource Identifier
 
-### Conceito
+#### Conceito
     É um forma de encontrar os recursos pedidos, e para fazer isso ele usa o nome do recurso eou a localização
 
 ### Resource

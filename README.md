@@ -172,7 +172,9 @@ Abre com F12, na aba Network podemos observar as atividade que ocorrem em uma pa
     é seguro já que não faz mudanças no servidor, não tem cache porque pode
     haver mudanças nos estados dos metodos, não tem body. 
     
-Comando no teminal: curl -X http://localhost:3000/posts -i
+Comando no teminal:
+
+    curl -X http://localhost:3000/posts -i
 
 #### GET
     Serve para pegar os recursos, caracteristicas:
@@ -185,7 +187,9 @@ Comando no teminal: curl -X http://localhost:3000/posts -i
     * Uso em forms HTML: sim. Dependendo do pedido é melhor não usar,
     mas se for o caso de uma simple pesquisa na maior parte dos caso o uso de form html é o ideal.
     
-    Comando no teminal: curl -v http://localhost:3000/posts
+Comando no teminal:
+
+    curl -v http://localhost:3000/posts
 
 #### HEAD
     Parecido com o GET, mas recebemos apenas o cabeçalho ao inves do body
@@ -195,6 +199,8 @@ Comando no teminal: curl -X http://localhost:3000/posts -i
     * Body: não;
     * Uso em form HTML: não;
     * cache: sim.
+
+Comando utlizado:
 
     Comando no teminal: curl -I http://localhost:3000/posts
 
@@ -206,6 +212,8 @@ Comando no teminal: curl -X http://localhost:3000/posts -i
     * Body: Sim, depende de como foi configurada a app;
     * Uso em form HTML: Sim;
     * Cache: Sim;
+
+Comando utilizado:
 
      curl -d ' "Nota: apos o -d é colocado as infomações que serão inseridas no json" { "id": 2, "title": "json-server-2", "author": "thiago magno" }' -H "Content-type: application/json" -X POST http://localhost:3000/posts
 
@@ -246,7 +254,7 @@ Comando utilizado:
     * Uso em form HTML:;
     * Cach:;
 
-    Comando Utilizado:
+ Comando Utilizado:
 
     curl -X DELETE http://localhost:3000/post/2
 

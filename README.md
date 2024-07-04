@@ -39,7 +39,7 @@ O que acontece é uma troca de mensagens entre o browser e o servidor, o browser
 ![Exemplo de Response](./Imagens%20aulas/response.png)
     Vesão do HTTP 200 ok(Indica que deu tudo com o pedido),
     o tipo de server(Express no caso do exemplo) e o topo de conteudo(: text/html) 
-### Resques/Response
+### Resquest/Response
 
 #### Headers
     São campos informativos.

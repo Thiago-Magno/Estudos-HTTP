@@ -185,7 +185,7 @@ Comando no teminal: curl -X http://localhost:3000/posts -i
     * Uso em forms HTML: sim. Dependendo do pedido é melhor não usar,
     mas se for o caso de uma simple pesquisa na maior parte dos caso o uso de form html é o ideal.
     
-Comando no teminal: curl -v http://localhost:3000/posts
+    Comando no teminal: curl -v http://localhost:3000/posts
 
 #### HEAD
     Parecido com o GET, mas recebemos apenas o cabeçalho ao inves do body
@@ -207,7 +207,7 @@ Comando no teminal: curl -v http://localhost:3000/posts
     * Uso em form HTML: Sim;
     * Cache: Sim;
 
- curl -d ' "Nota: apos o -d é colocado as infomações que serão inseridas no json" { "id": 2, "title": "json-server-2", "author": "thiago magno" }' -H "Content-type: application/json" -X POST http://localhost:3000/posts
+     curl -d ' "Nota: apos o -d é colocado as infomações que serão inseridas no json" { "id": 2, "title": "json-server-2", "author": "thiago magno" }' -H "Content-type: application/json" -X POST http://localhost:3000/posts
 
 
 #### PUT
@@ -221,7 +221,8 @@ Comando no teminal: curl -v http://localhost:3000/posts
     * Cache: Não;
 
 É o mesmo comando do POST, mas é colocado o PUT no lugar do POST:
-curl -d ' { "id": 2, "title": "json-server-2", "author": "thiago magno" }' -H "Content-type: application/json" -X PUT http://localhost:3000/posts
+
+    curl -d ' { "id": 2, "title": "json-server-2", "author": "thiago magno" }' -H "Content-type: application/json" -X PUT http://localhost:3000/posts
 
 #### PATCH
     O PATCH serve para fazer uma modificação parcial do recurso, diferente do PUT que faz a modicação do recurso inteiro.
@@ -231,8 +232,9 @@ curl -d ' { "id": 2, "title": "json-server-2", "author": "thiago magno" }' -H "C
     * Uso em form HTML: Não;
     * Cache: Não.
 
-Comando utilizado
-   curl -d ' { "author": "thiago magno" }' -H "Content-type: application/json" -X PATCH http://localhost:3000/posts
+Comando utilizado:
+
+    curl -d ' { "author": "thiago magno" }' -H "Content-type: application/json" -X PATCH http://localhost:3000/posts
 
 #### DELETE
     Deleta um recurso.
@@ -244,9 +246,9 @@ Comando utilizado
     * Uso em form HTML:;
     * Cach:;
 
-    Comando Utilizado;
+    Comando Utilizado:
 
-curl -X DELETE http://localhost:3000/post/2
+    curl -X DELETE http://localhost:3000/post/2
 
     Deleta o post#2
 

@@ -21,13 +21,13 @@ O que acontece é uma troca de mensagens entre o browser e o servidor, o browser
 ![Exemplo2](./Imagens%20aulas/caminho2.png) 
 
 #### Status code
-    É forma em qua se encontra o pedido, o estado em qual ele esta, ele foi concluido?
+    É forma em qual se encontra o pedido, o estado em qual ele esta, ele foi concluido?
     esta em processo?
     ou ocorreu algum erro?
       
     * 200: concluido
-    * 301: redireciodo, como por exemplo foi redireciona a um novo URL
-    * 404: pagina/arquivo não encontra
+    * 301: redireciodo, como por exemplo foi redirecionado a um novo URL
+    * 404: pagina/arquivo não encontrado
     * 500: erro interno de servidor
 
 

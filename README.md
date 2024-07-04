@@ -200,9 +200,10 @@ Comando no teminal:
     * Uso em form HTML: não;
     * cache: sim.
 
-Comando utlizado:
 
-    Comando no teminal: curl -I http://localhost:3000/posts
+Comando no teminal: 
+    
+    curl -I http://localhost:3000/posts
 
 #### POST
     Publica/inclui algum recurso em algum lugar
